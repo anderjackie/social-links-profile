@@ -4,7 +4,7 @@
 }
 
 :root {
-  --green: hsl(75, 94%, 57%);
+  --lime-green: hsl(75, 94%, 57%);
   --white: hsl(0, 0%, 100%);
   --grey: hsl(0, 0%, 20%);
   --dark-grey: hsl(0, 0%, 12%);
@@ -16,5 +16,89 @@
 
 body {
   font-family: Inter;
-  font-size: 14px;
+  font-size: .875rem;
+  background-color: var(--darker-grey);
+  color: var(--white);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  min-height: 100vh;
+}
+
+main {
+  background-color: var(--dark-grey);
+  margin: 0 auto;
+  width: 80%;
+  max-width: 24rem;
+  min-height: 36rem;
+  max-height: 36rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  border-radius: 1rem;
+}
+
+.avatar-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.5rem;
+}
+
+.info > img {
+  object-fit: contain;
+  border-radius: 50%;
+  width: 96px;
+  height: 96px;
+}
+
+.data {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.name {
+  font-size: 1.6rem;
+  font-weight: var(--semibold);
+}
+
+.location {
+  font-weight: var(--bold);
+  color: var(--lime-green);
+}
+
+.link-container {
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.link-container > a {
+  background-color: var(--grey);
+  height: 3rem;
+  line-height: 3rem;
+  width: 100%;
+  text-align: center;
+  vertical-align: middle;
+  border-radius: 5px;
+  font-weight: var(--bold);
+}
+
+.link-container > a:hover {
+  background-color: var(--lime-green);
+  color: var(--dark-grey);
 }
